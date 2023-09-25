@@ -6,8 +6,9 @@ import Cards from '../../components/cards/cards';
 const Home = () => {
     const cards =useLoaderData()
     return (
-        <div>
-         {/* <Banner></Banner> */}
+        <div> 
+        
+         <Banner></Banner>
             <Cards cards={cards}></Cards>
         </div>
     );

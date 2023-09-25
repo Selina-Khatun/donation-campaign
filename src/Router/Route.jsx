@@ -25,10 +25,7 @@ const Router = createBrowserRouter([
                 element: <Statistics></Statistics>,
             },
             {
-                // path : "/phones/:id",
-                // element : <Phone></Phone>,
-                // loader:()=>fetch('/phones.json')
-
+            
                 path: "/cards/:id",
                 element:<Card></Card>,
                 loader:()=>fetch('/data.json')

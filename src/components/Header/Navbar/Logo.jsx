@@ -2,8 +2,8 @@ import React from 'react';
 
 const Logo = () => {
     return (
-        <div>
-            <img src="src\assets\Logo.png" alt="" />
+        <div className=''>
+            <img src="https://i.postimg.cc/zBg28JDz/Logo.png" alt="" />
             {/* <h1>Donation</h1> */}
         </div>
     );

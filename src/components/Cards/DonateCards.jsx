@@ -10,7 +10,7 @@ const DonateCards = ({card}) => {
               {/* <Link to={`/phones/${id}`} state={phone_name}></Link> */}
           <Link to={`/cards/${id}`}>
           <div className="card card-compact  bg-base-100 shadow-xl">
-                <figure><img src={picture} alt="Shoes" /></figure>
+                <figure><img className=' h-52' src={picture} alt="Shoes" /></figure>
                 <div style={{backgroundColor:card_bg_color}} className="card-body">
                 <div className="card-actions  justify-start">
                         <button style={{backgroundColor:category_bg_color}}>{category}</button>
