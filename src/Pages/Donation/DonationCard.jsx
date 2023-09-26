@@ -4,10 +4,10 @@ const DonationCard = ({ card }) => {
     const { id, picture, title, category, category_bg_color, card_bg_color, text_button_bg_color, description, price } = card || {};
     return (
         <div>
-           
-            <div className="card card-side bg-base-100 shadow-xl">
-                <figure className='w-2/5'><img class="h-full  object-cover" src={picture} /></figure>
-                <div className="card-body rounded-e-xl" style={{ backgroundColor: card_bg_color }}>
+
+            <div className="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row">
+                <figure className=' lg:w-2/5 lg:rounded-s-xl '><img class="h-full w-full    object-cover" src={picture} /></figure>
+                <div className="card-body  lg:rounded-e-xl rounded-none" style={{ backgroundColor: card_bg_color }}>
                     <div className="card-actions  justify-start">
                         <button className=' text-sm px-2 py-0.5 rounded-sm' style={{ backgroundColor: category_bg_color, color: text_button_bg_color }}>{category}</button>
                     </div>

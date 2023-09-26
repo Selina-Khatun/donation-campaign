@@ -1,4 +1,5 @@
 import React from 'react';
+import swal from 'sweetalert';
 
 const DetailsCard = ({ card }) => {
     // const { picture, title, category, category_bg_color, card_bg_color, text_button_bg_color, description,price } = donation
@@ -10,7 +11,7 @@ const DetailsCard = ({ card }) => {
         if (!detailsItems) {
             addedDetailsArray.push(card);
             localStorage.setItem('details', JSON.stringify(addedDetailsArray))
-            alert('added ')
+            swal ("Good job!", "You have successfully donated ", "success");
         } else {
 
             const isExist = detailsItems.find((card) => card.id === id);
@@ -18,9 +19,9 @@ const DetailsCard = ({ card }) => {
             if (!isExist) {
                 addedDetailsArray.push(...detailsItems, card);
                 localStorage.setItem('details', JSON.stringify(addedDetailsArray))
-                alert('added ')
-            }else{
-                alert('error ')
+                swal ("Good job!", "You have successfully donated", "success");
+            } else {
+                swal ("opps!", "already exixted!");
             }
 
         }
