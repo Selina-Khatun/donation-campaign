@@ -11,9 +11,9 @@ const DonateCards = ({card}) => {
           <Link to={`/cards/${id}`}>
           <div className="card card-compact  bg-base-100 shadow-xl">
                 <figure><img className=' h-52' src={picture} alt="Shoes" /></figure>
-                <div style={{backgroundColor:card_bg_color}} className="card-body">
+                <div style={{backgroundColor:card_bg_color}} className="card-body rounded-2xl">
                 <div className="card-actions  justify-start">
-                        <button style={{backgroundColor:category_bg_color}}>{category}</button>
+                        <button className=' px-2 py-0.5 rounded-sm'  style={{backgroundColor:category_bg_color,color: text_button_bg_color}}>{category}</button>
                     </div>
                    
                     <h2 style={{color:text_button_bg_color}} className="card-title">{title}</h2>
