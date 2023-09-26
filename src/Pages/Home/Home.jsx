@@ -4,14 +4,14 @@ import { useLoaderData } from 'react-router-dom';
 import Cards from '../../components/cards/cards';
 
 const Home = () => {
-    const cards =useLoaderData()
+    const cards = useLoaderData()
     return (
-        <div> 
-        
-         <Banner></Banner>
+        <div>
+
+            <Banner></Banner>
             <Cards cards={cards}></Cards>
         </div>
     );
 };
 
-export default Home;
+export default Home ;

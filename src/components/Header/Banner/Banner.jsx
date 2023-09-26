@@ -4,7 +4,7 @@ import React from 'react';
 const Banner = () => {
   return (
 
-    <div className="hero relative -mt-32 h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
+    <div className="hero relative mb-10 -mt-32 h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
       {/* <div className="hero-overlay bg-opacity-80"></div> */}
       <div class="col-start-1 row-start-1  bg-[#FFFFFFF2] bg-opacity-70 w-full h-full"></div>
       <div className="hero-content text-center text-neutral-content">
@@ -14,7 +14,7 @@ const Banner = () => {
             <div class="relative mb-4 flex w-full mx-auto items-stretch flex-wrap ">
               <input
                 type="search"
-                class="relative m-0 mx-auto max-w-7xl -mr-3 block min-w-0 flex-auto rounded-lg border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-2 text-sm font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:border-[#FF444A] focus:text-neutral-700 focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
+                class="relative m-0 mx-auto max-w-sm -mr-3 block min-w-0 flex-auto rounded-lg border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-2 text-sm font-normal leading-[1.6] text-neutral-700 outline-none transition duration-200 ease-in-out focus:border-[#FF444A] focus:text-neutral-700 focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
                 placeholder="Search here...."
                 aria-label="Search"
                 aria-describedby="button-addon1" />
