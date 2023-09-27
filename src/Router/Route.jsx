@@ -11,12 +11,12 @@ const Router = createBrowserRouter([
     {
         path: "/",
         element:<MainLayout></MainLayout> ,
+        errorElement:<ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
                 element: <Home></Home>,
-                errorElement:<ErrorPage></ErrorPage>
-                loader:()=>fetch('/data.json')
+               loader:()=>fetch('/data.json')
             },
             {
                 path: "/Donation",
