@@ -1,19 +1,14 @@
 import React, { PureComponent, useEffect } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Line } from 'recharts';
 import useGetCards from '../../hook/useGetCards';
-
+import { useLoaderData, useParams } from 'react-router-dom';
 
 const Statistics = () => {
-    const [Cards]=useGetCards()
-      console.log(Cards)    
-
-    const data = [
-        { name: 'Group A', value: 400 },
-        { name: 'Group B', value: 300 },
-        // { name: 'Group C', value: 300 },
-        // { name: 'Group D', value: 200 },
-      ];
-    //  
+  // const { id } = useParams()
+  // console.log(id)
+  const cards = useLoaderData()    
+  console.log(cards.length)
+     
 
     
       const COLORS = ['#FF444A', '#00C49F'];
@@ -49,7 +44,7 @@ const renderCustomizedLabel = ({
             this is Statistics
             <PieChart width={800} height={800}>
       <Pie
-        data={Cards}
+        // data={data}
         cx={200}
         cy={200}
         labelLine={false}
@@ -58,10 +53,10 @@ const renderCustomizedLabel = ({
         fill="#8884d8"
         dataKey="value"
       >
-        {Cards?.map((entry, index) => (
+        {/* {data.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           
-        ))}
+        ))} */}
         <Line type="monotone" dataKey="name" stroke="#8884d8" activeDot={{ r: 8 }}></Line>
         {/* <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="uv" stroke="#82ca9d" /> */}

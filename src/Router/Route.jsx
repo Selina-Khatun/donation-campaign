@@ -23,12 +23,12 @@ const Router = createBrowserRouter([
             {
                 path: "/Statistics",
                 element: <Statistics></Statistics>,
+                loader:()=>fetch("/data.json") 
             },
             {
             
                 path: "/cards/:id",
                 element:<Card></Card>,
-                // loader:()=>fetch('/data.json')
                 loader:()=>fetch("/data.json")
             
             }

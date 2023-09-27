@@ -7,9 +7,12 @@ const Home = () => {
     const cards = useLoaderData()
     const [query,setQuery]=useState("");
     return (
-        <div>
-
+        <div >
             <Banner setQuery={setQuery}></Banner>
+<div className=' container'>
+
+</div>
+            
             <Cards query={query} setQuery={setQuery} cards={cards}></Cards>
         </div>
     );

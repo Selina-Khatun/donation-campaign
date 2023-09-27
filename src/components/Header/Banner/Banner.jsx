@@ -11,8 +11,8 @@ const Banner = ({ setQuery }) => {
   }
   return (
 
-    <div className="hero relative mb-10 -mt-32 h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
-      {/* <div className="hero-overlay bg-opacity-80"></div> */}
+    <div className="hero relative mb-10 w-full lg:-mt-32 mt-8 h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
+
       <div className="col-start-1 row-start-1  bg-[#FFFFFFF2] bg-opacity-70 w-full h-full"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className=" flex flex-col items-center text-center">
