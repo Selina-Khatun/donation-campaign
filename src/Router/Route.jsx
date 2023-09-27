@@ -4,6 +4,7 @@ import MainLayout from "../Layout/MainLayout";
 import Donation from "../Pages/Donation/Donation";
 import Statistics from "../Pages/Statistics/Statistics";
 import Card from "../Pages/card/card";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const Router = createBrowserRouter([
@@ -14,6 +15,7 @@ const Router = createBrowserRouter([
             {
                 path: "/",
                 element: <Home></Home>,
+                errorElement:<ErrorPage></ErrorPage>
                 loader:()=>fetch('/data.json')
             },
             {
