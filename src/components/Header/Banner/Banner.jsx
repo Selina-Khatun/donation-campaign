@@ -11,9 +11,9 @@ const Banner = ({ setQuery }) => {
   }
   return (
 
-    <div className="hero relative mb-10 w-[100%] opacity-75 -mt-[5%] border-none h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
+    <div className="hero relative mb-10 w-[100%] -mt-[5%] border-none h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
 
-      <div className="col-start-1 row-start-1 border-none bg-[#FFFFFFF2] bg-opacity-40 w-full h-full"></div>
+      <div className="col-start-1 row-start-1 border-none bg-[#FFFFFFF2] bg-opacity-50 w-full h-full"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className=" flex flex-col items-center text-center">
           <h1 className=" my-8 text-4xl text-[#0B0B0B] font-bold">I Grow By Helping People In Need</h1>

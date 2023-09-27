@@ -14,11 +14,11 @@ const Card = () => {
                 return card.id === parseInt(id); 
             });
     
-            // console.log("findCard:", findCard);
+           
             setCard(findCard);
         }
     }, [id, cards]);
-    // console.log(card);
+    
     return (
         <div>
            <DetailsCard card={card}></DetailsCard>

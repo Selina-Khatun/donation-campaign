@@ -11,11 +11,11 @@ const Donation = () => {
             setDonation(detailsItems);
         } else {
             setNoFound("No Data Found")
-            // console.log("No Data Found")
+           
         }
 
     }, []);
-    // console.log(donation);
+   
     return (
         <div>
 

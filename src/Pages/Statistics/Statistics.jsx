@@ -1,12 +1,12 @@
 import React, { PureComponent, useEffect, useState } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Line } from 'recharts';
-import useGetCards from '../../hook/useGetCards';
+
 import { useLoaderData } from 'react-router-dom';
 
 
 const Statistics = () => {
   const cards = useLoaderData()
-  // console.log(cards.length) 
+
   const [donation, setDonation] = useState([]);
   const [localData, setLocalData] = useState(0);
   useEffect(() => {
