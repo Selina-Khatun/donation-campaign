@@ -6,13 +6,13 @@ const DonationCard = ({ card }) => {
         <div>
 
             <div className="card card-side bg-base-100 shadow-xl flex flex-col lg:flex-row">
-                <figure className=' lg:w-2/5 lg:rounded-s-xl '><img class="h-full w-full    object-cover" src={picture} /></figure>
+                <figure className=' lg:w-2/5 lg:rounded-s-xl '><img className="h-full w-full    object-cover" src={picture} /></figure>
                 <div className="card-body  lg:rounded-e-xl rounded-none" style={{ backgroundColor: card_bg_color }}>
                     <div className="card-actions  justify-start">
                         <button className=' text-sm px-2 py-0.5 rounded-sm' style={{ backgroundColor: category_bg_color, color: text_button_bg_color }}>{category}</button>
                     </div>
                     <h2 className="card-title">{title}</h2>
-                    <h4 style={{ color: text_button_bg_color }} class="mb-2 text-xl font-semibold ">
+                    <h4 style={{ color: text_button_bg_color }} className="mb-2 text-xl font-semibold ">
                         {price}
                     </h4>
                     <div>

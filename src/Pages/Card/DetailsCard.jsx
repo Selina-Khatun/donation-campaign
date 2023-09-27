@@ -30,9 +30,10 @@ const DetailsCard = ({ card }) => {
     return (
         <div>
             <div className='pb-20'>
-                <div className="card w-full pb-20">
-                    <figure><img className='w-full h-[80vh]' src={picture} alt="Shoes" /></figure>
-                    <div className='-mt-20'>
+                <div className=" relative card w-full pb-20">
+                    <figure><img className='w-full h-[80vh] rounded-lg' src={picture} alt="Shoes" /></figure>
+                    <div className="absolute h-1/4 mt-[27.5%] inset-0 bg-gray-700 opacity-60 rounded-md"></div>
+                    <div className='-mt-20 z-10'>
                         <button onClick={() => handleAddDonation(id)} style={{ background: text_button_bg_color }} className='ms-10 px-6 py-3 font-semibold text-white'>Donate: {price}</button>
                     </div>
                 </div>

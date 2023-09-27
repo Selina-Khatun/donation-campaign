@@ -1,15 +1,11 @@
 import React, { PureComponent, useEffect } from 'react';
 import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Line } from 'recharts';
+import useGetCards from '../../hook/useGetCards';
 
 
 const Statistics = () => {
-    // const [donates,setDonates] = useState([])
-    // const data = useEffect(()=>{
-    //           fetch('../../../public/data.json')
-    //           .then(res=>res.json())
-    //           .then(data=>console.log(data))
-    //       },[])
-          
+    const [Cards]=useGetCards()
+      console.log(Cards)    
 
     const data = [
         { name: 'Group A', value: 400 },
@@ -17,12 +13,7 @@ const Statistics = () => {
         // { name: 'Group C', value: 300 },
         // { name: 'Group D', value: 200 },
       ];
-    //   const [donates,setDonetes] = useState([])
-    //   useEffect(()=>{
-    //       fetch('../../../public/donetsInfo.json')
-    //       .then(res=>res.json())
-    //       .then(data=>setDonetes(data))
-    //   },[])
+    //  
 
     
       const COLORS = ['#FF444A', '#00C49F'];
@@ -58,7 +49,7 @@ const renderCustomizedLabel = ({
             this is Statistics
             <PieChart width={800} height={800}>
       <Pie
-        data={data}
+        data={Cards}
         cx={200}
         cy={200}
         labelLine={false}
@@ -67,7 +58,7 @@ const renderCustomizedLabel = ({
         fill="#8884d8"
         dataKey="value"
       >
-        {data.map((entry, index) => (
+        {Cards?.map((entry, index) => (
           <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
           
         ))}
