@@ -11,9 +11,9 @@ const Banner = ({ setQuery }) => {
   }
   return (
 
-    <div className="hero relative mb-10 w-full lg:-mt-32 mt-8 h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
+    <div className="hero relative mb-10 w-[100%] opacity-75 -mt-[5%] border-none h-[80vh]" style={{ backgroundImage: 'url(https://i.postimg.cc/yxx5MZk2/Rectangle-4281.png)' }}>
 
-      <div className="col-start-1 row-start-1  bg-[#FFFFFFF2] bg-opacity-70 w-full h-full"></div>
+      <div className="col-start-1 row-start-1 border-none bg-[#FFFFFFF2] bg-opacity-40 w-full h-full"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className=" flex flex-col items-center text-center">
           <h1 className=" my-8 text-4xl text-[#0B0B0B] font-bold">I Grow By Helping People In Need</h1>
@@ -30,7 +30,7 @@ const Banner = ({ setQuery }) => {
 
               <button
                 onClick={handleQuery}
-                className="relative z-[2] flex items-center rounded-r bg-[#FF444A] px-6 py-2.5 text-sm font-medium  leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 focus:bg-red-600 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                className="relative z-[2] flex items-center rounded-r bg-[#FF444A] px-6 py-2.5 text-sm font-medium  leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-red-700 focus:bg-[#FF444A] hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
                 type="button"
                 id="button-addon1"
 
