@@ -38,8 +38,8 @@ const DetailsCard = ({ card }) => {
                     </div>
                 </div>
                 <div>
-                    <h2 className='text-5xl font-semibold py-4'>{title}</h2>
-                    <p>{description}</p>
+                    <h2 className='text-4xl font-semibold pt-10'>{title}</h2>
+                    <p className='py-5 text-sm'>{description}</p>
                 </div>
             </div>
 

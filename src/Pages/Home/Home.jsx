@@ -8,11 +8,7 @@ const Home = () => {
     const [query,setQuery]=useState("");
     return (
         <div >
-            <Banner setQuery={setQuery}></Banner>
-<div className=' container'>
-
-</div>
-            
+            <Banner setQuery={setQuery}></Banner>        
             <Cards query={query} setQuery={setQuery} cards={cards}></Cards>
         </div>
     );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const viewDetails = () => {
+const ViewDetails = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const viewDetails = () => {
     );
 };
 
-export default viewDetails;
+export default ViewDetails;
